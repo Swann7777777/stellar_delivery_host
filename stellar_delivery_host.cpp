@@ -37,7 +37,7 @@ int main() {
     ENetEvent enet_event;
 
     address.host = ENET_HOST_ANY;
-    address.port = 16383;
+    address.port = 25565;
 
 
     server = enet_host_create(&address, 32, 1, 0, 0);
@@ -59,7 +59,7 @@ int main() {
     std::mt19937 gen(rd());
 
 
-    std::uniform_int_distribution<> pos_dist(-5000000, 5000000);
+    std::uniform_int_distribution<> pos_dist(-30000000, 30000000);
     std::uniform_int_distribution<> size_dist(1000, 10000);
     std::uniform_int_distribution<> asset_dist(0, 4);
 
