@@ -61,7 +61,7 @@ int main() {
 
     std::uniform_int_distribution<> pos_dist(-30000000, 30000000);
     std::uniform_int_distribution<> size_dist(1000, 10000);
-    std::uniform_int_distribution<> asset_dist(0, 4);
+    std::uniform_int_distribution<> asset_dist(0, 2);
 
 
 
